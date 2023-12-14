@@ -1,0 +1,11 @@
+IP Address,VirusTotal community Score,AbuseIpDB Confidence Score,MetaDefender community Score,Geo Info
+000.0000.00.0,"Error Code : NotFoundError URL ""MDAwLjAwMDAuMDAuMA"" not found",Error Code : 422 The ip address must be a valid IPv4 or IPv6 address (e.g. 8.8.8.8 or 2001:4860:4860::8888).,Error Code : 400180 Invalid format of input. Provide IPv4 or IPv6,
+0.0.0.1,0,0,0,There is no information available about the location of this IP address.
+172.16.0.1,0,0,Error Code : 400185 The address is a not routable IP,
+35.230.66.101,18,100,1,"County : United States  City : The Dalles  Location : 45.55425 , -121.187"
+169.254.0.1,0,0,0,There is no information available about the location of this IP address.
+192.0.0.1,0,0,0,There is no information available about the location of this IP address.
+192.0.2.1,0,0,0,There is no information available about the location of this IP address.
+192.88.99.1,0,0,0,There is no information available about the location of this IP address.
+192.168.0.1,0,0,Error Code : 400185 The address is a not routable IP,
+198.18.0.1,0,0,0,There is no information available about the location of this IP address.

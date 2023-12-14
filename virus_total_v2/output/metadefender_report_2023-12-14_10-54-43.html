@@ -1,0 +1,698 @@
+<!DOCTYPE html>
+        <html lang="en">
+        <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Automated VirusTotal Analysis Report | API v3</title>
+            <style>
+                body {
+                font-family: Sans-Serif;
+                color: #1d262e;
+                }
+                h1 {
+                    font-size: 1.25em;
+                    margin: 50px 0 0 50px;
+                }
+                h2 {
+                    font-size: .75em;
+                    font-weight:normal;
+                    margin: 5px 0 15px 50px;
+                    color: #7d888b;
+                }
+                h3 {
+                    font-size: 1em;
+                    font-weight:normal;
+                    margin: 0 0 20px 50px;
+                    color: #7d888b;
+                }
+                h4 {
+                    font-size: .750em;
+                    font-weight:normal;
+                    margin: 0 0 20px 50px;
+                    text-align:right;
+                    color: orange;
+                }
+                table {
+                    text-align: left;
+                    width: 100%;
+                    border-collapse: collapse;
+                    border: none;
+                    padding: 0;
+                    margin-left: 50px;
+                    margin-bottom: 40px;
+                    max-width: 1200px;
+                }
+                th { 
+                    text-align: left;
+                    border:none;
+                    padding: 10px 0 5px 10px;
+                    margin-left: 10px;
+                }
+                tr { 
+                    text-align: left;
+                    border-bottom: 1px solid #ddd;
+                    border-top: none;
+                    border-left: none;
+                    border-right: none;
+                    padding-left: 10px;
+                    margin-left: 0;
+                }
+                td { 
+                    border-bottom: none;
+                    border-top: none;
+                    border-left: none;
+                    border-right: none;
+                    padding-left: 10px;
+                }
+                tr th {
+                    padding: 10px 10px 5px 10px;
+                }
+
+            </style>
+        </head>
+        <body>
+        <h1 class="reportHeader">MetaDefender Analysis Report</h1>
+        <h2>MetaDefender API</h2>
+        <h3>Thu Dec 14 10:54:45 2023</h3><table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>0.0.0.1</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>Community Score</th>
+      <td>0/7  :  security vendors flagged this as malicious</td>
+    </tr>
+    <tr>
+      <th>Geo Info</th>
+      <td>There is no information available about the location of this IP address.</td>
+    </tr>
+    <tr>
+      <th>Last Analysis Date</th>
+      <td>2023-12-14 05:12:22</td>
+    </tr>
+  </tbody>
+</table><table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th>Source</th>
+      <th>assessment</th>
+      <th>Last Detected</th>
+      <th>Last Update</th>
+      <th>Result</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>webroot.com</td>
+      <td></td>
+      <td></td>
+      <td>2023-12-14T05:12:22.533Z</td>
+      <td>5</td>
+    </tr>
+    <tr>
+      <td>avira.com</td>
+      <td></td>
+      <td></td>
+      <td>2023-12-14T05:12:22.502Z</td>
+      <td>5</td>
+    </tr>
+    <tr>
+      <td>reputation.alienvault.com</td>
+      <td></td>
+      <td></td>
+      <td>2023-12-14T05:12:22.568Z</td>
+      <td>5</td>
+    </tr>
+    <tr>
+      <td>danger.rulez.sk</td>
+      <td></td>
+      <td></td>
+      <td>2023-12-14T05:12:22.568Z</td>
+      <td>5</td>
+    </tr>
+    <tr>
+      <td>feodotracker.abuse.ch</td>
+      <td></td>
+      <td></td>
+      <td>2023-12-14T05:12:22.568Z</td>
+      <td>5</td>
+    </tr>
+    <tr>
+      <td>spamhaus.org</td>
+      <td></td>
+      <td></td>
+      <td>2023-12-14T05:12:22.568Z</td>
+      <td>5</td>
+    </tr>
+    <tr>
+      <td>isc.sans.edu</td>
+      <td></td>
+      <td></td>
+      <td>2023-12-14T05:12:22.568Z</td>
+      <td>5</td>
+    </tr>
+  </tbody>
+</table><table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>35.230.66.101</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>Community Score</th>
+      <td>1/7  :  security vendors flagged this as malicious</td>
+    </tr>
+    <tr>
+      <th>Geo Info</th>
+      <td>County : United States  City : The Dalles  Location : 45.55425 , -121.187</td>
+    </tr>
+    <tr>
+      <th>Last Analysis Date</th>
+      <td>2023-12-09 12:53:36</td>
+    </tr>
+  </tbody>
+</table><table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th>Source</th>
+      <th>assessment</th>
+      <th>Last Detected</th>
+      <th>Last Update</th>
+      <th>Result</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>webroot.com</td>
+      <td>high risk</td>
+      <td></td>
+      <td>2023-12-09T12:53:36.600Z</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>avira.com</td>
+      <td></td>
+      <td></td>
+      <td>2023-12-09T12:53:36.454Z</td>
+      <td>5</td>
+    </tr>
+    <tr>
+      <td>reputation.alienvault.com</td>
+      <td></td>
+      <td></td>
+      <td>2023-12-09T12:53:36.555Z</td>
+      <td>5</td>
+    </tr>
+    <tr>
+      <td>danger.rulez.sk</td>
+      <td></td>
+      <td></td>
+      <td>2023-12-09T12:53:36.555Z</td>
+      <td>5</td>
+    </tr>
+    <tr>
+      <td>feodotracker.abuse.ch</td>
+      <td></td>
+      <td></td>
+      <td>2023-12-09T12:53:36.555Z</td>
+      <td>5</td>
+    </tr>
+    <tr>
+      <td>spamhaus.org</td>
+      <td></td>
+      <td></td>
+      <td>2023-12-09T12:53:36.555Z</td>
+      <td>5</td>
+    </tr>
+    <tr>
+      <td>isc.sans.edu</td>
+      <td></td>
+      <td></td>
+      <td>2023-12-09T12:53:36.555Z</td>
+      <td>5</td>
+    </tr>
+  </tbody>
+</table><table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>169.254.0.1</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>Community Score</th>
+      <td>0/7  :  security vendors flagged this as malicious</td>
+    </tr>
+    <tr>
+      <th>Geo Info</th>
+      <td>There is no information available about the location of this IP address.</td>
+    </tr>
+    <tr>
+      <th>Last Analysis Date</th>
+      <td>2023-12-14 05:12:22</td>
+    </tr>
+  </tbody>
+</table><table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th>Source</th>
+      <th>assessment</th>
+      <th>Last Detected</th>
+      <th>Last Update</th>
+      <th>Result</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>webroot.com</td>
+      <td>trustworthy</td>
+      <td></td>
+      <td>2023-12-14T05:12:22.704Z</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>avira.com</td>
+      <td></td>
+      <td></td>
+      <td>2023-12-14T05:12:22.640Z</td>
+      <td>5</td>
+    </tr>
+    <tr>
+      <td>reputation.alienvault.com</td>
+      <td></td>
+      <td></td>
+      <td>2023-12-14T05:12:22.681Z</td>
+      <td>5</td>
+    </tr>
+    <tr>
+      <td>danger.rulez.sk</td>
+      <td></td>
+      <td></td>
+      <td>2023-12-14T05:12:22.681Z</td>
+      <td>5</td>
+    </tr>
+    <tr>
+      <td>feodotracker.abuse.ch</td>
+      <td></td>
+      <td></td>
+      <td>2023-12-14T05:12:22.681Z</td>
+      <td>5</td>
+    </tr>
+    <tr>
+      <td>spamhaus.org</td>
+      <td></td>
+      <td></td>
+      <td>2023-12-14T05:12:22.681Z</td>
+      <td>5</td>
+    </tr>
+    <tr>
+      <td>isc.sans.edu</td>
+      <td></td>
+      <td></td>
+      <td>2023-12-14T05:12:22.681Z</td>
+      <td>5</td>
+    </tr>
+  </tbody>
+</table><table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>192.0.0.1</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>Community Score</th>
+      <td>0/7  :  security vendors flagged this as malicious</td>
+    </tr>
+    <tr>
+      <th>Geo Info</th>
+      <td>There is no information available about the location of this IP address.</td>
+    </tr>
+    <tr>
+      <th>Last Analysis Date</th>
+      <td>2023-12-14 05:12:22</td>
+    </tr>
+  </tbody>
+</table><table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th>Source</th>
+      <th>assessment</th>
+      <th>Last Detected</th>
+      <th>Last Update</th>
+      <th>Result</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>webroot.com</td>
+      <td>trustworthy</td>
+      <td></td>
+      <td>2023-12-14T05:12:22.542Z</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>avira.com</td>
+      <td></td>
+      <td></td>
+      <td>2023-12-14T05:12:22.499Z</td>
+      <td>5</td>
+    </tr>
+    <tr>
+      <td>reputation.alienvault.com</td>
+      <td></td>
+      <td></td>
+      <td>2023-12-14T05:12:22.539Z</td>
+      <td>5</td>
+    </tr>
+    <tr>
+      <td>danger.rulez.sk</td>
+      <td></td>
+      <td></td>
+      <td>2023-12-14T05:12:22.539Z</td>
+      <td>5</td>
+    </tr>
+    <tr>
+      <td>feodotracker.abuse.ch</td>
+      <td></td>
+      <td></td>
+      <td>2023-12-14T05:12:22.539Z</td>
+      <td>5</td>
+    </tr>
+    <tr>
+      <td>spamhaus.org</td>
+      <td></td>
+      <td></td>
+      <td>2023-12-14T05:12:22.539Z</td>
+      <td>5</td>
+    </tr>
+    <tr>
+      <td>isc.sans.edu</td>
+      <td></td>
+      <td></td>
+      <td>2023-12-14T05:12:22.539Z</td>
+      <td>5</td>
+    </tr>
+  </tbody>
+</table><table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>192.0.2.1</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>Community Score</th>
+      <td>0/7  :  security vendors flagged this as malicious</td>
+    </tr>
+    <tr>
+      <th>Geo Info</th>
+      <td>There is no information available about the location of this IP address.</td>
+    </tr>
+    <tr>
+      <th>Last Analysis Date</th>
+      <td>2023-12-14 05:12:22</td>
+    </tr>
+  </tbody>
+</table><table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th>Source</th>
+      <th>assessment</th>
+      <th>Last Detected</th>
+      <th>Last Update</th>
+      <th>Result</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>webroot.com</td>
+      <td>trustworthy</td>
+      <td></td>
+      <td>2023-12-14T05:12:22.577Z</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>avira.com</td>
+      <td></td>
+      <td></td>
+      <td>2023-12-14T05:12:22.502Z</td>
+      <td>5</td>
+    </tr>
+    <tr>
+      <td>reputation.alienvault.com</td>
+      <td></td>
+      <td></td>
+      <td>2023-12-14T05:12:22.565Z</td>
+      <td>5</td>
+    </tr>
+    <tr>
+      <td>danger.rulez.sk</td>
+      <td></td>
+      <td></td>
+      <td>2023-12-14T05:12:22.565Z</td>
+      <td>5</td>
+    </tr>
+    <tr>
+      <td>feodotracker.abuse.ch</td>
+      <td></td>
+      <td></td>
+      <td>2023-12-14T05:12:22.565Z</td>
+      <td>5</td>
+    </tr>
+    <tr>
+      <td>spamhaus.org</td>
+      <td></td>
+      <td></td>
+      <td>2023-12-14T05:12:22.565Z</td>
+      <td>5</td>
+    </tr>
+    <tr>
+      <td>isc.sans.edu</td>
+      <td></td>
+      <td></td>
+      <td>2023-12-14T05:12:22.565Z</td>
+      <td>5</td>
+    </tr>
+  </tbody>
+</table><table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>192.88.99.1</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>Community Score</th>
+      <td>0/7  :  security vendors flagged this as malicious</td>
+    </tr>
+    <tr>
+      <th>Geo Info</th>
+      <td>There is no information available about the location of this IP address.</td>
+    </tr>
+    <tr>
+      <th>Last Analysis Date</th>
+      <td>2023-12-14 05:12:22</td>
+    </tr>
+  </tbody>
+</table><table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th>Source</th>
+      <th>assessment</th>
+      <th>Last Detected</th>
+      <th>Last Update</th>
+      <th>Result</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>webroot.com</td>
+      <td>trustworthy</td>
+      <td></td>
+      <td>2023-12-14T05:12:22.561Z</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>avira.com</td>
+      <td></td>
+      <td></td>
+      <td>2023-12-14T05:12:22.503Z</td>
+      <td>5</td>
+    </tr>
+    <tr>
+      <td>reputation.alienvault.com</td>
+      <td></td>
+      <td></td>
+      <td>2023-12-14T05:12:22.543Z</td>
+      <td>5</td>
+    </tr>
+    <tr>
+      <td>danger.rulez.sk</td>
+      <td></td>
+      <td></td>
+      <td>2023-12-14T05:12:22.543Z</td>
+      <td>5</td>
+    </tr>
+    <tr>
+      <td>feodotracker.abuse.ch</td>
+      <td></td>
+      <td></td>
+      <td>2023-12-14T05:12:22.543Z</td>
+      <td>5</td>
+    </tr>
+    <tr>
+      <td>spamhaus.org</td>
+      <td></td>
+      <td></td>
+      <td>2023-12-14T05:12:22.543Z</td>
+      <td>5</td>
+    </tr>
+    <tr>
+      <td>isc.sans.edu</td>
+      <td></td>
+      <td></td>
+      <td>2023-12-14T05:12:22.543Z</td>
+      <td>5</td>
+    </tr>
+  </tbody>
+</table><table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>198.18.0.1</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>Community Score</th>
+      <td>0/7  :  security vendors flagged this as malicious</td>
+    </tr>
+    <tr>
+      <th>Geo Info</th>
+      <td>There is no information available about the location of this IP address.</td>
+    </tr>
+    <tr>
+      <th>Last Analysis Date</th>
+      <td>2023-12-14 05:12:22</td>
+    </tr>
+  </tbody>
+</table><table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th>Source</th>
+      <th>assessment</th>
+      <th>Last Detected</th>
+      <th>Last Update</th>
+      <th>Result</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>webroot.com</td>
+      <td>trustworthy</td>
+      <td></td>
+      <td>2023-12-14T05:12:22.692Z</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>avira.com</td>
+      <td></td>
+      <td></td>
+      <td>2023-12-14T05:12:22.636Z</td>
+      <td>5</td>
+    </tr>
+    <tr>
+      <td>reputation.alienvault.com</td>
+      <td></td>
+      <td></td>
+      <td>2023-12-14T05:12:22.673Z</td>
+      <td>5</td>
+    </tr>
+    <tr>
+      <td>danger.rulez.sk</td>
+      <td></td>
+      <td></td>
+      <td>2023-12-14T05:12:22.673Z</td>
+      <td>5</td>
+    </tr>
+    <tr>
+      <td>feodotracker.abuse.ch</td>
+      <td></td>
+      <td></td>
+      <td>2023-12-14T05:12:22.673Z</td>
+      <td>5</td>
+    </tr>
+    <tr>
+      <td>spamhaus.org</td>
+      <td></td>
+      <td></td>
+      <td>2023-12-14T05:12:22.673Z</td>
+      <td>5</td>
+    </tr>
+    <tr>
+      <td>isc.sans.edu</td>
+      <td></td>
+      <td></td>
+      <td>2023-12-14T05:12:22.673Z</td>
+      <td>5</td>
+    </tr>
+  </tbody>
+</table>
+             <script>
+                const td_ele = document.querySelectorAll("td");
+                function change_td_ele_color() {
+                    for (let i = 0; i < td_ele.length; i++) { // iterate all thorugh td
+                        if(td_ele[i].innerText.includes("malicious")){
+                            var ele = td_ele[i];
+                            var html = ele.innerHTML;
+                            td_ele[i].innerHTML = html.replace(/malicious/g,'<span style="color:red">malicious</span>');                            
+                        }
+                        if(td_ele[i].innerText.includes("malware")){
+                            var ele = td_ele[i];
+                            var html = ele.innerHTML;
+                            td_ele[i].innerHTML = html.replace(/malware/g,'<span style="color:red">malware</span>');                            
+                        }
+                        if(td_ele[i].innerText.includes("suspicious")){
+                            var ele = td_ele[i];
+                            var html = ele.innerHTML;
+                            td_ele[i].innerHTML = html.replace(/suspicious/g,'<span style="color:orange">suspicious</span>');                            
+                        }
+                        if(td_ele[i].innerText.includes("undetected")){
+                            var ele = td_ele[i];
+                            var html = ele.innerHTML;
+                            td_ele[i].innerHTML = html.replace(/undetected/g,'<span style="color:grey">undetected</span>');                            
+                        }
+                        if(td_ele[i].innerText.includes("unrated")){
+                            var ele = td_ele[i];
+                            var html = ele.innerHTML;
+                            td_ele[i].innerHTML = html.replace(/unrated/g,'<span style="color:grey">unrated</span>');                
+                        }
+                        if(td_ele[i].innerText.includes("harmless")){
+                            var ele = td_ele[i];
+                            var html = ele.innerHTML;
+                            td_ele[i].innerHTML = html.replace(/harmless/g,'<span style="color:green">harmless</span>');                            
+                        }
+                        if(td_ele[i].innerText.includes("clean")){
+                            var ele = td_ele[i];
+                            var html = ele.innerHTML;
+                            td_ele[i].innerHTML = html.replace(/clean/g,'<span style="color:green">clean</span>');                            
+                        }
+                    }
+                }        
+                change_td_ele_color();
+            </script>
+            <h2 align="right">Developed by : Alien C00de  2023 ver: 1.1.0</h2>
+            </body>
+            </html>
+        

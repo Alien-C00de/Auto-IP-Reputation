@@ -1,0 +1,709 @@
+<!DOCTYPE html>
+        <html lang="en">
+        <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Automated VirusTotal Analysis Report | API v3</title>
+            <style>
+                body {
+                font-family: Sans-Serif;
+                color: #1d262e;
+                }
+                h1 {
+                    font-size: 1.25em;
+                    margin: 50px 0 0 50px;
+                }
+                h2 {
+                    font-size: .75em;
+                    font-weight:normal;
+                    margin: 5px 0 15px 50px;
+                    color: #7d888b;
+                }
+                h3 {
+                    font-size: 1em;
+                    font-weight:normal;
+                    margin: 0 0 20px 50px;
+                    color: #7d888b;
+                }
+                h4 {
+                    font-size: .750em;
+                    font-weight:normal;
+                    margin: 0 0 20px 50px;
+                    text-align:right;
+                    color: orange;
+                }
+                table {
+                    text-align: left;
+                    width: 100%;
+                    border-collapse: collapse;
+                    border: none;
+                    padding: 0;
+                    margin-left: 50px;
+                    margin-bottom: 40px;
+                    max-width: 1200px;
+                }
+                th { 
+                    text-align: left;
+                    border:none;
+                    padding: 10px 0 5px 10px;
+                    margin-left: 10px;
+                }
+                tr { 
+                    text-align: left;
+                    border-bottom: 1px solid #ddd;
+                    border-top: none;
+                    border-left: none;
+                    border-right: none;
+                    padding-left: 10px;
+                    margin-left: 0;
+                }
+                td { 
+                    border-bottom: none;
+                    border-top: none;
+                    border-left: none;
+                    border-right: none;
+                    padding-left: 10px;
+                }
+                tr th {
+                    padding: 10px 10px 5px 10px;
+                }
+
+            </style>
+        </head>
+        <body>
+        <h1 class="reportHeader">AbuseIPDB Analysis Report</h1>
+        <h2>AbuseIPDB API v2</h2>
+        <h3>Thu Dec 14 10:54:47 2023</h3><table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>0.0.0.1</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>IP Address</th>
+      <td>0.0.0.1</td>
+    </tr>
+    <tr>
+      <th>Is Public</th>
+      <td>False</td>
+    </tr>
+    <tr>
+      <th>IP Version</th>
+      <td>4</td>
+    </tr>
+    <tr>
+      <th>Is Whitelisted</th>
+      <td>False</td>
+    </tr>
+    <tr>
+      <th>Abuse Confidence Score</th>
+      <td>0</td>
+    </tr>
+    <tr>
+      <th>Country Code</th>
+      <td>None</td>
+    </tr>
+    <tr>
+      <th>Usage Type</th>
+      <td>Reserved</td>
+    </tr>
+    <tr>
+      <th>ISP</th>
+      <td>Broadcast RFC1700</td>
+    </tr>
+    <tr>
+      <th>Domain</th>
+      <td>None</td>
+    </tr>
+    <tr>
+      <th>Hostnames</th>
+      <td>[]</td>
+    </tr>
+    <tr>
+      <th>Is Tor</th>
+      <td>False</td>
+    </tr>
+    <tr>
+      <th>Total Reports</th>
+      <td>7</td>
+    </tr>
+    <tr>
+      <th>Number of Distinct Users</th>
+      <td>1</td>
+    </tr>
+    <tr>
+      <th>Last Reported At</th>
+      <td>2023-11-27T06:18:16+00:00</td>
+    </tr>
+  </tbody>
+</table><table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>172.16.0.1</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>IP Address</th>
+      <td>172.16.0.1</td>
+    </tr>
+    <tr>
+      <th>Is Public</th>
+      <td>False</td>
+    </tr>
+    <tr>
+      <th>IP Version</th>
+      <td>4</td>
+    </tr>
+    <tr>
+      <th>Is Whitelisted</th>
+      <td>False</td>
+    </tr>
+    <tr>
+      <th>Abuse Confidence Score</th>
+      <td>0</td>
+    </tr>
+    <tr>
+      <th>Country Code</th>
+      <td>None</td>
+    </tr>
+    <tr>
+      <th>Usage Type</th>
+      <td>Reserved</td>
+    </tr>
+    <tr>
+      <th>ISP</th>
+      <td>Private IP Address LAN</td>
+    </tr>
+    <tr>
+      <th>Domain</th>
+      <td>None</td>
+    </tr>
+    <tr>
+      <th>Hostnames</th>
+      <td>[]</td>
+    </tr>
+    <tr>
+      <th>Is Tor</th>
+      <td>False</td>
+    </tr>
+    <tr>
+      <th>Total Reports</th>
+      <td>0</td>
+    </tr>
+    <tr>
+      <th>Number of Distinct Users</th>
+      <td>0</td>
+    </tr>
+    <tr>
+      <th>Last Reported At</th>
+      <td>2023-07-17T13:55:14+00:00</td>
+    </tr>
+  </tbody>
+</table><table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>35.230.66.101</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>IP Address</th>
+      <td>35.230.66.101</td>
+    </tr>
+    <tr>
+      <th>Is Public</th>
+      <td>True</td>
+    </tr>
+    <tr>
+      <th>IP Version</th>
+      <td>4</td>
+    </tr>
+    <tr>
+      <th>Is Whitelisted</th>
+      <td>False</td>
+    </tr>
+    <tr>
+      <th>Abuse Confidence Score</th>
+      <td>100</td>
+    </tr>
+    <tr>
+      <th>Country Code</th>
+      <td>US</td>
+    </tr>
+    <tr>
+      <th>Usage Type</th>
+      <td>Data Center/Web Hosting/Transit</td>
+    </tr>
+    <tr>
+      <th>ISP</th>
+      <td>Google LLC</td>
+    </tr>
+    <tr>
+      <th>Domain</th>
+      <td>google.com</td>
+    </tr>
+    <tr>
+      <th>Hostnames</th>
+      <td>[101.66.230.35.bc.googleusercontent.com]</td>
+    </tr>
+    <tr>
+      <th>Is Tor</th>
+      <td>False</td>
+    </tr>
+    <tr>
+      <th>Total Reports</th>
+      <td>6730</td>
+    </tr>
+    <tr>
+      <th>Number of Distinct Users</th>
+      <td>660</td>
+    </tr>
+    <tr>
+      <th>Last Reported At</th>
+      <td>2023-12-04T07:58:58+00:00</td>
+    </tr>
+  </tbody>
+</table><table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>169.254.0.1</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>IP Address</th>
+      <td>169.254.0.1</td>
+    </tr>
+    <tr>
+      <th>Is Public</th>
+      <td>False</td>
+    </tr>
+    <tr>
+      <th>IP Version</th>
+      <td>4</td>
+    </tr>
+    <tr>
+      <th>Is Whitelisted</th>
+      <td>None</td>
+    </tr>
+    <tr>
+      <th>Abuse Confidence Score</th>
+      <td>0</td>
+    </tr>
+    <tr>
+      <th>Country Code</th>
+      <td>None</td>
+    </tr>
+    <tr>
+      <th>Usage Type</th>
+      <td>Reserved</td>
+    </tr>
+    <tr>
+      <th>ISP</th>
+      <td>Link Local</td>
+    </tr>
+    <tr>
+      <th>Domain</th>
+      <td>None</td>
+    </tr>
+    <tr>
+      <th>Hostnames</th>
+      <td>[]</td>
+    </tr>
+    <tr>
+      <th>Is Tor</th>
+      <td>False</td>
+    </tr>
+    <tr>
+      <th>Total Reports</th>
+      <td>0</td>
+    </tr>
+    <tr>
+      <th>Number of Distinct Users</th>
+      <td>0</td>
+    </tr>
+    <tr>
+      <th>Last Reported At</th>
+      <td>None</td>
+    </tr>
+  </tbody>
+</table><table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>192.0.0.1</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>IP Address</th>
+      <td>192.0.0.1</td>
+    </tr>
+    <tr>
+      <th>Is Public</th>
+      <td>True</td>
+    </tr>
+    <tr>
+      <th>IP Version</th>
+      <td>4</td>
+    </tr>
+    <tr>
+      <th>Is Whitelisted</th>
+      <td>False</td>
+    </tr>
+    <tr>
+      <th>Abuse Confidence Score</th>
+      <td>0</td>
+    </tr>
+    <tr>
+      <th>Country Code</th>
+      <td>None</td>
+    </tr>
+    <tr>
+      <th>Usage Type</th>
+      <td>None</td>
+    </tr>
+    <tr>
+      <th>ISP</th>
+      <td>None</td>
+    </tr>
+    <tr>
+      <th>Domain</th>
+      <td>None</td>
+    </tr>
+    <tr>
+      <th>Hostnames</th>
+      <td>[]</td>
+    </tr>
+    <tr>
+      <th>Is Tor</th>
+      <td>False</td>
+    </tr>
+    <tr>
+      <th>Total Reports</th>
+      <td>0</td>
+    </tr>
+    <tr>
+      <th>Number of Distinct Users</th>
+      <td>0</td>
+    </tr>
+    <tr>
+      <th>Last Reported At</th>
+      <td>2023-06-22T10:56:34+00:00</td>
+    </tr>
+  </tbody>
+</table><table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>192.0.2.1</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>IP Address</th>
+      <td>192.0.2.1</td>
+    </tr>
+    <tr>
+      <th>Is Public</th>
+      <td>True</td>
+    </tr>
+    <tr>
+      <th>IP Version</th>
+      <td>4</td>
+    </tr>
+    <tr>
+      <th>Is Whitelisted</th>
+      <td>False</td>
+    </tr>
+    <tr>
+      <th>Abuse Confidence Score</th>
+      <td>0</td>
+    </tr>
+    <tr>
+      <th>Country Code</th>
+      <td>None</td>
+    </tr>
+    <tr>
+      <th>Usage Type</th>
+      <td>Reserved</td>
+    </tr>
+    <tr>
+      <th>ISP</th>
+      <td>Test Net</td>
+    </tr>
+    <tr>
+      <th>Domain</th>
+      <td>None</td>
+    </tr>
+    <tr>
+      <th>Hostnames</th>
+      <td>[]</td>
+    </tr>
+    <tr>
+      <th>Is Tor</th>
+      <td>False</td>
+    </tr>
+    <tr>
+      <th>Total Reports</th>
+      <td>0</td>
+    </tr>
+    <tr>
+      <th>Number of Distinct Users</th>
+      <td>0</td>
+    </tr>
+    <tr>
+      <th>Last Reported At</th>
+      <td>2023-04-06T18:21:47+00:00</td>
+    </tr>
+  </tbody>
+</table><table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>192.88.99.1</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>IP Address</th>
+      <td>192.88.99.1</td>
+    </tr>
+    <tr>
+      <th>Is Public</th>
+      <td>False</td>
+    </tr>
+    <tr>
+      <th>IP Version</th>
+      <td>4</td>
+    </tr>
+    <tr>
+      <th>Is Whitelisted</th>
+      <td>False</td>
+    </tr>
+    <tr>
+      <th>Abuse Confidence Score</th>
+      <td>0</td>
+    </tr>
+    <tr>
+      <th>Country Code</th>
+      <td>None</td>
+    </tr>
+    <tr>
+      <th>Usage Type</th>
+      <td>Reserved</td>
+    </tr>
+    <tr>
+      <th>ISP</th>
+      <td>6To4 Relay Anycast RFC3068</td>
+    </tr>
+    <tr>
+      <th>Domain</th>
+      <td>None</td>
+    </tr>
+    <tr>
+      <th>Hostnames</th>
+      <td>[]</td>
+    </tr>
+    <tr>
+      <th>Is Tor</th>
+      <td>False</td>
+    </tr>
+    <tr>
+      <th>Total Reports</th>
+      <td>1</td>
+    </tr>
+    <tr>
+      <th>Number of Distinct Users</th>
+      <td>1</td>
+    </tr>
+    <tr>
+      <th>Last Reported At</th>
+      <td>2023-12-02T17:05:25+00:00</td>
+    </tr>
+  </tbody>
+</table><table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>192.168.0.1</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>IP Address</th>
+      <td>192.168.0.1</td>
+    </tr>
+    <tr>
+      <th>Is Public</th>
+      <td>False</td>
+    </tr>
+    <tr>
+      <th>IP Version</th>
+      <td>4</td>
+    </tr>
+    <tr>
+      <th>Is Whitelisted</th>
+      <td>False</td>
+    </tr>
+    <tr>
+      <th>Abuse Confidence Score</th>
+      <td>0</td>
+    </tr>
+    <tr>
+      <th>Country Code</th>
+      <td>None</td>
+    </tr>
+    <tr>
+      <th>Usage Type</th>
+      <td>Reserved</td>
+    </tr>
+    <tr>
+      <th>ISP</th>
+      <td>Private IP Address LAN</td>
+    </tr>
+    <tr>
+      <th>Domain</th>
+      <td>None</td>
+    </tr>
+    <tr>
+      <th>Hostnames</th>
+      <td>[]</td>
+    </tr>
+    <tr>
+      <th>Is Tor</th>
+      <td>False</td>
+    </tr>
+    <tr>
+      <th>Total Reports</th>
+      <td>127</td>
+    </tr>
+    <tr>
+      <th>Number of Distinct Users</th>
+      <td>4</td>
+    </tr>
+    <tr>
+      <th>Last Reported At</th>
+      <td>2023-11-26T05:59:02+00:00</td>
+    </tr>
+  </tbody>
+</table><table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>198.18.0.1</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>IP Address</th>
+      <td>198.18.0.1</td>
+    </tr>
+    <tr>
+      <th>Is Public</th>
+      <td>True</td>
+    </tr>
+    <tr>
+      <th>IP Version</th>
+      <td>4</td>
+    </tr>
+    <tr>
+      <th>Is Whitelisted</th>
+      <td>False</td>
+    </tr>
+    <tr>
+      <th>Abuse Confidence Score</th>
+      <td>0</td>
+    </tr>
+    <tr>
+      <th>Country Code</th>
+      <td>None</td>
+    </tr>
+    <tr>
+      <th>Usage Type</th>
+      <td>Reserved</td>
+    </tr>
+    <tr>
+      <th>ISP</th>
+      <td>Testing RFC2544</td>
+    </tr>
+    <tr>
+      <th>Domain</th>
+      <td>None</td>
+    </tr>
+    <tr>
+      <th>Hostnames</th>
+      <td>[]</td>
+    </tr>
+    <tr>
+      <th>Is Tor</th>
+      <td>False</td>
+    </tr>
+    <tr>
+      <th>Total Reports</th>
+      <td>0</td>
+    </tr>
+    <tr>
+      <th>Number of Distinct Users</th>
+      <td>0</td>
+    </tr>
+    <tr>
+      <th>Last Reported At</th>
+      <td>2021-02-03T16:56:57+00:00</td>
+    </tr>
+  </tbody>
+</table>
+             <script>
+                const td_ele = document.querySelectorAll("td");
+                function change_td_ele_color() {
+                    for (let i = 0; i < td_ele.length; i++) { // iterate all thorugh td
+                        if(td_ele[i].innerText.includes("malicious")){
+                            var ele = td_ele[i];
+                            var html = ele.innerHTML;
+                            td_ele[i].innerHTML = html.replace(/malicious/g,'<span style="color:red">malicious</span>');                            
+                        }
+                        if(td_ele[i].innerText.includes("malware")){
+                            var ele = td_ele[i];
+                            var html = ele.innerHTML;
+                            td_ele[i].innerHTML = html.replace(/malware/g,'<span style="color:red">malware</span>');                            
+                        }
+                        if(td_ele[i].innerText.includes("suspicious")){
+                            var ele = td_ele[i];
+                            var html = ele.innerHTML;
+                            td_ele[i].innerHTML = html.replace(/suspicious/g,'<span style="color:orange">suspicious</span>');                            
+                        }
+                        if(td_ele[i].innerText.includes("undetected")){
+                            var ele = td_ele[i];
+                            var html = ele.innerHTML;
+                            td_ele[i].innerHTML = html.replace(/undetected/g,'<span style="color:grey">undetected</span>');                            
+                        }
+                        if(td_ele[i].innerText.includes("unrated")){
+                            var ele = td_ele[i];
+                            var html = ele.innerHTML;
+                            td_ele[i].innerHTML = html.replace(/unrated/g,'<span style="color:grey">unrated</span>');                
+                        }
+                        if(td_ele[i].innerText.includes("harmless")){
+                            var ele = td_ele[i];
+                            var html = ele.innerHTML;
+                            td_ele[i].innerHTML = html.replace(/harmless/g,'<span style="color:green">harmless</span>');                            
+                        }
+                        if(td_ele[i].innerText.includes("clean")){
+                            var ele = td_ele[i];
+                            var html = ele.innerHTML;
+                            td_ele[i].innerHTML = html.replace(/clean/g,'<span style="color:green">clean</span>');                            
+                        }
+                    }
+                }        
+                change_td_ele_color();
+            </script>
+            <h2 align="right">Developed by : Alien C00de  2023 ver: 1.1.0</h2>
+            </body>
+            </html>
+        
