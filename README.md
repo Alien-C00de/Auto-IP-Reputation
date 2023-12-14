@@ -10,6 +10,7 @@ Install following library to run the code.
 
     pip install Pandas
     pip install requests
+    pip install aiohttp
     pip install configparser
     Install wkhtmltopdf (for Debian/Ubuntu)
     sudo apt-get install wkhtmltopdf -  (https://pypi.org/project/pdfkit/)
