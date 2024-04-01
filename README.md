@@ -15,6 +15,7 @@ To install and run the Auto IP Reputation Tool, follow these steps:
     ```bash
     pip install Pandas
     pip install requests
+    pip install asyncio
     pip install aiohttp
     pip install configparser
     ```
